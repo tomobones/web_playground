@@ -8,7 +8,7 @@ services:
       MYSQL_PASSWORD: abc123
       MYSQL_ALLOW_EMPTY_PASSWORD: 1
     volumes:
-      - ./db:/docker-entrypoint-initdb.d
+      - ./mysql/:/var/lib/mysql
     networks:
       - lamp-docker
   www:
