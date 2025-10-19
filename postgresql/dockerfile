@@ -1,0 +1,6 @@
+FROM postgres:16-alpine
+ENV POSTGRES_HOST_AUTH_METHOD=trust \
+    POSTGRES_DB=appdb \
+    POSTGRES_USER=appuser
+
+EXPOSE 5432
